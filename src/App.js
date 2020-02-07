@@ -6,6 +6,7 @@ const NoteButton =(props) =>{
   return(
     <button 
     className="note-button"
+    style={{ height: (200 -(15 * props.index)) + 'px' }}
     onClick={()=> {
       props.setPlayedNotes([...props.playedNotes, props.note]);
       console.log(props.playedNotes);
@@ -23,8 +24,7 @@ function App() {
       <h1>Create your react xylophone</h1>
       <div className="xylophone">
         {/* I am placeholder buttons, please create me using a map, and with your own component */}
-        
-        {notes.map(note => (
+        {notes.map((note,index) =>(
         <NoteButton 
         playedNotes={playedNotes}
         setPlayedNotes={setPlayedNotes}
@@ -33,7 +33,10 @@ function App() {
         />
         ))}
       </div>
-      {/* <button>Replay</button> */}
+      {JSON.stringify(playedNotes)}
+      <button onClick={()=> playedNotes.map(note => new Audio(note.file).play())}>Replay</button>
+      <button onClick={() => setPlayedNotes([])}>Clear</button>
+  
       {/* <button>Clear</button> */}
     </div>
   );
