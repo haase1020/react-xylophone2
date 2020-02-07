@@ -10,9 +10,9 @@ We will be exploring when and why to create reusable components, mapping over da
 
 ## Goals
 
-* [ ] Create a working xylophone. Pressing each of the note buttons will play the tone associated with it.
-* [ ] Create a reusable component for the note button.
-* [ ] Do not manually create each note button. Instead, use of the array of objects found in `src/assets/notes.js` and a `.map` to create the components.
+* [ x] Create a working xylophone. Pressing each of the note buttons will play the tone associated with it.
+* [ x] Create a reusable component for the note button.
+* [x ] Do not manually create each note button. Instead, use of the array of objects found in `src/assets/notes.js` and a `.map` to create the components.
 
 ## Stretch Goals
 
