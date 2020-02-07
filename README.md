@@ -16,9 +16,9 @@ We will be exploring when and why to create reusable components, mapping over da
 
 ## Stretch Goals
 
-* [ ] Use state to keep track of notes as they are played.
-* [ ] Make the `Replay` button replay all previously played notes.
-* [ ] Make the `Clear` button clear previously played notes.
+* [ x] Use state to keep track of notes as they are played.
+* [x ] Make the `Replay` button replay all previously played notes.
+* [ x] Make the `Clear` button clear previously played notes.
 * [ ] Use CSS to make your xylophone look like a xylophone.
 * [ ] Record the relative times notes are played and use that during playback.
 * [ ] Use scss mixins to make different styles for each note to reduce repeating yourself.
